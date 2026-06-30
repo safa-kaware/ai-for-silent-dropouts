@@ -1,0 +1,11 @@
+Name,Roll No,Email,Student Phone,Parent Phone,Attendance (%),Maths (/100),Physics (/100),Chemistry (/100),Computer Science (/100),English (/100),Assignments (/10)
+Aarav Sharma,200,aarav_200@college.edu,9876543210,9123456789,72,68,45,80,55,71,7
+Aditi Rao,201,aditi_201@college.edu,9876543211,9123456790,28,32,25,40,30,45,3
+Arjun Patel,202,arjun_202@college.edu,9876543212,9123456791,85,92,88,95,90,82,9
+Ananya Iyer,203,ananya_203@college.edu,9876543213,9123456792,55,58,62,45,52,60,4
+Ishaan Gupta,204,ishaan_204@college.edu,9876543214,9123456793,32,45,38,50,42,55,5
+Kavya Nair,205,kavya_205@college.edu,9876543215,9123456794,90,85,82,88,92,80,10
+Rohan Deshmukh,206,rohan_206@college.edu,9876543216,9123456795,45,40,35,42,38,50,6
+Saanvi Kulkarni,207,saanvi_207@college.edu,9876543217,9123456796,78,75,70,82,78,85,8
+Vivaan Joshi,208,vivaan_208@college.edu,9876543218,9123456797,22,25,20,30,28,35,2
+Diya Malhotra,209,diya_209@college.edu,9876543219,9123456798,65,60,55,62,58,68,7
