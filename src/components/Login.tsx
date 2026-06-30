@@ -75,7 +75,7 @@ export default function Login({ students, onLogin, initialType = "faculty", onBa
             🎓
           </div>
           <h2 className="text-4xl font-extrabold text-gray-900 tracking-tight">
-            EduTrack <span className="text-scholar-primary">AI</span>
+            AI for <span className="text-scholar-primary">Silent Dropouts</span>
           </h2>
           <p className="text-gray-500 font-medium">
             Welcome back! Please select your portal to continue.
@@ -108,6 +108,41 @@ export default function Login({ students, onLogin, initialType = "faculty", onBa
             <div>
               <p className="text-xs font-bold text-scholar-primary uppercase tracking-wider">Demo Access</p>
               <p className="text-sm text-gray-600">admin | password123</p>
+            </div>
+          </div>
+        )}
+
+        {activeType === "student" && (
+          <div className="bg-white/50 backdrop-blur-sm border border-scholar-primary/10 rounded-scholar p-4 flex flex-col gap-2 shadow-sm">
+            <div className="flex items-start gap-3">
+              <AlertCircle className="w-5 h-5 text-scholar-primary mt-0.5" />
+              <div>
+                <p className="text-xs font-bold text-scholar-primary uppercase tracking-wider">Demo Student Logins</p>
+                <div className="text-xs text-gray-600 space-y-1.5 mt-1">
+                  <p className="text-[10px] text-gray-400 font-bold uppercase tracking-wide">Click to autofill:</p>
+                  <button 
+                    type="button"
+                    onClick={() => setStudentEmail("aditi_201@college.edu")}
+                    className="underline hover:text-scholar-primary text-left block font-medium"
+                  >
+                    🔴 High Risk: aditi_201@college.edu (Aditi Rao)
+                  </button>
+                  <button 
+                    type="button"
+                    onClick={() => setStudentEmail("aarav_200@college.edu")}
+                    className="underline hover:text-scholar-primary text-left block font-medium"
+                  >
+                    🟡 Medium Risk: aarav_200@college.edu (Aarav Sharma)
+                  </button>
+                  <button 
+                    type="button"
+                    onClick={() => setStudentEmail("arjun_202@college.edu")}
+                    className="underline hover:text-scholar-primary text-left block font-medium"
+                  >
+                    🟢 Low Risk: arjun_202@college.edu (Arjun Patel)
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         )}

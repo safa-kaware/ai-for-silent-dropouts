@@ -82,7 +82,7 @@ export default function StudentPortal({ students, materials, geminiKey, loggedIn
       You are writing a personal letter to a student named ${selectedStudent.Name} to help them navigate their current academic journey.
       
       The student's current status is ${selectedStudent["Predicted Risk"]}. 
-      Data: Attendance: ${selectedStudent["Attendance (%)"]}%, Marks: ${selectedStudent["Marks (/100)"]} /100, Assignments: ${selectedStudent["Assignments (/10)"]} /10.
+      Data: Attendance: ${selectedStudent["Attendance (%)"]}%, Marks: ${selectedStudent["Avg Marks"]} /100, Assignments: ${selectedStudent["Assignments (/10)"]} /10.
 
       Write a warm, humanized, and encouraging 4-week "Growth Roadmap". 
       
@@ -314,7 +314,7 @@ ${selectedStudent.Name}, I truly believe in you. You aren't defined by a single 
                   <FileText className="w-8 h-8" />
                 </div>
                 <p className="text-[10px] font-extrabold text-gray-400 uppercase tracking-widest mb-1">Avg Marks</p>
-                <p className="text-4xl font-black text-gray-900">{student["Marks (/100)"]}/100</p>
+                <p className="text-4xl font-black text-gray-900">{student["Avg Marks"]}/100</p>
               </div>
               <div className="scholar-card text-center group">
                 <div className="w-16 h-16 bg-scholar-bg rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-scholar-accent group-hover:text-white transition-all duration-500">

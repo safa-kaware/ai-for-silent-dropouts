@@ -23,7 +23,7 @@ export default function LandingPage({ onLoginClick }: LandingPageProps) {
             <div className="w-10 h-10 bg-scholar-primary rounded-xl flex items-center justify-center text-white shadow-lg shadow-scholar-primary/20">
               <Brain className="w-6 h-6" />
             </div>
-            <span className="text-xl font-black tracking-tighter text-gray-900">EduTrack <span className="text-scholar-primary">AI</span></span>
+            <span className="text-xl font-black tracking-tighter text-gray-900">AI for <span className="text-scholar-primary">Silent Dropouts</span></span>
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#about" className="text-sm font-bold text-gray-500 hover:text-scholar-primary transition-colors">About</a>
@@ -117,7 +117,7 @@ export default function LandingPage({ onLoginClick }: LandingPageProps) {
                 <span className="text-scholar-primary">Zero Dropout</span> Education.
               </h2>
               <p className="text-lg text-gray-600 font-medium leading-relaxed">
-                EduTrack AI was born from a simple realization: many students fail not because of a lack of ability, 
+                AI for Silent Dropouts was born from a simple realization: many students fail not because of a lack of ability, 
                 but because of a lack of timely intervention. By the time a student fails an exam, it's often too late.
               </p>
               <p className="text-lg text-gray-600 font-medium leading-relaxed">
@@ -239,7 +239,7 @@ export default function LandingPage({ onLoginClick }: LandingPageProps) {
                 <div className="w-10 h-10 bg-scholar-primary rounded-xl flex items-center justify-center text-white">
                   <Brain className="w-6 h-6" />
                 </div>
-                <span className="text-xl font-black tracking-tighter">EduTrack <span className="text-scholar-primary">AI</span></span>
+                <span className="text-xl font-black tracking-tighter">AI for <span className="text-scholar-primary">Silent Dropouts</span></span>
               </div>
               <p className="text-gray-400 font-medium max-w-sm">
                 Dedicated to transforming education through data-driven insights and compassionate intervention.
@@ -263,7 +263,7 @@ export default function LandingPage({ onLoginClick }: LandingPageProps) {
             </div>
           </div>
           <div className="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
-            <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">© 2026 EduTrack AI. All rights reserved.</p>
+            <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">© 2026 AI for Silent Dropouts. All rights reserved.</p>
             <div className="flex gap-8">
               <a href="#" className="text-xs font-bold text-gray-500 uppercase tracking-widest hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" className="text-xs font-bold text-gray-500 uppercase tracking-widest hover:text-white transition-colors">Terms of Service</a>

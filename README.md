@@ -1,6 +1,4 @@
-
 # AI for Silent Dropouts - Student Success Platform
-https://ai-for-silent-dropouts.vercel.app/
 
 An AI-powered web platform dedicated to identifying academic risks early and providing structured, personalized recovery paths for every student.
 
@@ -38,4 +36,42 @@ An AI-powered web platform dedicated to identifying academic risks early and pro
 
 ---
 
+## 🚀 Getting Started
 
+### 1. Prerequisites
+- Node.js (v18+)
+- npm
+
+### 2. Environment Variables
+Create a `.env` file in the root directory based on `.env.example`:
+
+```env
+# Gemini API Key for smart draft generation and 4-week roadmap curation
+GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
+
+# Public URL where the application or service is hosted
+APP_URL="YOUR_APP_URL"
+```
+
+### 3. Installation
+Install the project dependencies:
+```bash
+npm install
+```
+
+### 4. Running the Development Server
+Launch both the Vite frontend and Express server:
+```bash
+npm run dev
+```
+Open your browser and navigate to `http://localhost:3000`.
+
+### 5. Build for Production
+To bundle the frontend assets and compile the Express server for production:
+```bash
+npm run build
+```
+Start the compiled bundle:
+```bash
+npm run start
+```

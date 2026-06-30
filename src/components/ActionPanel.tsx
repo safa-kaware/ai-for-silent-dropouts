@@ -39,7 +39,7 @@ export default function ActionPanel({ students, geminiKey, twSid, twToken, twPho
     try {
       const ai = new GoogleGenAI({ apiKey: geminiKey });
       const prompt = `Write a brief, polite, and empathetic email to a university student named ${student.Name}. 
-      Their current attendance is ${student["Attendance (%)"]}% and marks are ${student["Marks (/100)"]}/100. 
+      Their current attendance is ${student["Attendance (%)"]}% and marks are ${student["Avg Marks"]}/100. 
       Their academic status is flagged as ${student["Predicted Risk"]}. Ask them to schedule a meeting with their 
       mentor to discuss support options. Keep it strictly under 4 sentences.`;
 
@@ -54,7 +54,7 @@ export default function ActionPanel({ students, geminiKey, twSid, twToken, twPho
       console.error("Gemini Error:", error);
       if (error.message?.includes("429") || error.message?.includes("quota")) {
         setStatusMessages(prev => ({ ...prev, [student["Roll No"]]: { type: "warning", text: "⚠️ AI servers are currently busy. Generating smart fallback template..." } }));
-        const fallback = `Dear ${student.Name},\n\nI am writing to check in on your academic progress. Your current attendance is ${student["Attendance (%)"]}% and your marks are ${student["Marks (/100)"]}/100, which has flagged your status as ${student["Predicted Risk"]}. Please schedule a meeting with me to discuss how we can support your success.\n\nBest regards,\nYour Mentor`;
+        const fallback = `Dear ${student.Name},\n\nI am writing to check in on your academic progress. Your current attendance is ${student["Attendance (%)"]}% and your marks are ${student["Avg Marks"]}/100, which has flagged your status as ${student["Predicted Risk"]}. Please schedule a meeting with me to discuss how we can support your success.\n\nBest regards,\nYour Mentor`;
         setAiDrafts(prev => ({ ...prev, [student["Roll No"]]: fallback }));
       } else {
         setStatusMessages(prev => ({ ...prev, [student["Roll No"]]: { type: "error", text: `Error: ${error.message}` } }));

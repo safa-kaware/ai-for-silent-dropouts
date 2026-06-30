@@ -130,7 +130,7 @@ export default function Sidebar({
     const worksheet = XLSX.utils.json_to_sheet(students);
     const workbook = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(workbook, worksheet, "Students");
-    XLSX.writeFile(workbook, "EduTrack_AI_Sample_Template.xlsx");
+    XLSX.writeFile(workbook, "AI_for_Silent_Dropouts_Sample_Template.xlsx");
   };
 
   return (

@@ -413,7 +413,7 @@ export default function App() {
               🎓
             </div>
             <h1 className="text-2xl font-extrabold text-gray-900 tracking-tight">
-              EduTrack <span className="text-scholar-primary">AI</span> Prediction
+              AI for <span className="text-scholar-primary">Silent Dropouts</span>
             </h1>
           </div>
           <div className="flex items-center gap-4">
