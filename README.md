@@ -1,4 +1,4 @@
-# EduTrack AI - Student Success Platform
+# AI for Silent Dropouts - Student Success Platform
 
 An AI-powered web platform dedicated to identifying academic risks early and providing structured, personalized recovery paths for every student.
 
